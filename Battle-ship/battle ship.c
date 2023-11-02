@@ -121,9 +121,9 @@ int main()
 
     printf("Welcome to Battleship!\n");
 
-    while (num_hits < SHIP_SIZE)
+    while (num_hits < SHIP_SIZE * SHIP_SIZE)
     {
-        printf("Ships left: %d\n", SHIP_SIZE - num_hits);
+        printf("Ships left: %d\n", SHIP_SIZE * SHIP_SIZE - num_hits);
         printf("Misses: %d\n", num_misses);
         printf("  ");
         for (int i = 0; i < BOARD_SIZE; i++)
